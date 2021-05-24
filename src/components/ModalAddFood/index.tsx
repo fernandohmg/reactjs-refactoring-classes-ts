@@ -21,7 +21,11 @@ interface ModalAddFoodProps {
   handleAddFood: (data: FoodData) => void;
 }
 
-function ModalAddFood({ isOpen, setIsOpen, handleAddFood }: ModalAddFoodProps) {
+const ModalAddFood = ({
+  isOpen,
+  setIsOpen,
+  handleAddFood,
+}: ModalAddFoodProps) => {
   const formRef = createRef<FormHandles>();
 
   const handleSubmit = async (data: FoodData) => {
@@ -48,6 +52,6 @@ function ModalAddFood({ isOpen, setIsOpen, handleAddFood }: ModalAddFoodProps) {
       </Form>
     </Modal>
   );
-}
+};
 
 export default ModalAddFood;

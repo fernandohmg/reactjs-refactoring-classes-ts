@@ -22,7 +22,7 @@ interface ModalEditFoodProps {
   handleUpdateFood: (data: FoodData) => void;
 }
 
-function ModalEditFood(props: ModalEditFoodProps) {
+const ModalEditFood = (props: ModalEditFoodProps) => {
   const { isOpen, editingFood, setIsOpen, handleUpdateFood } = props;
   const formRef = createRef<FormHandles>();
 
@@ -51,6 +51,6 @@ function ModalEditFood(props: ModalEditFoodProps) {
       </Form>
     </Modal>
   );
-}
+};
 
 export default ModalEditFood;

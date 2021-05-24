@@ -7,7 +7,7 @@ interface ModalProps {
   children: ReactNode;
 }
 
-function Modal(props: ModalProps) {
+const Modal = (props: ModalProps) => {
   const { isOpen, setIsOpen, children } = props;
 
   return (
@@ -38,6 +38,6 @@ function Modal(props: ModalProps) {
       {children}
     </ReactModal>
   );
-}
+};
 
 export default Modal;

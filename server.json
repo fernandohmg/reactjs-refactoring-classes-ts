@@ -26,9 +26,9 @@
     },
     {
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png",
-      "name": "Teste novamente",
-      "price": "35,90",
-      "description": "Comida teste novamente",
+      "name": "Teste",
+      "price": "35,00",
+      "description": "Comida teste",
       "available": true,
       "id": 4
     }

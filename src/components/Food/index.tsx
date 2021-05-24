@@ -19,7 +19,7 @@ interface FoodProps {
   handleDelete: (id: number) => void;
 }
 
-function Food(props: FoodProps) {
+const Food = (props: FoodProps) => {
   const { food, handleEditFood, handleDelete } = props;
   const [isAvailable, setIsAvailable] = useState(food.available);
 
@@ -86,6 +86,6 @@ function Food(props: FoodProps) {
       </section>
     </Container>
   );
-}
+};
 
 export default Food;

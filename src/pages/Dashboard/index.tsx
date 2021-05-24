@@ -16,7 +16,7 @@ interface FoodData {
   image: string;
 }
 
-function Dashboard() {
+const Dashboard = () => {
   const [foods, setFoods] = useState<FoodData[]>([]);
   const [editingFood, setEditingFood] = useState<FoodData>({} as FoodData);
   const [modalOpen, setModalOpen] = useState(false);
@@ -109,6 +109,6 @@ function Dashboard() {
       </FoodsContainer>
     </>
   );
-}
+};
 
 export default Dashboard;
